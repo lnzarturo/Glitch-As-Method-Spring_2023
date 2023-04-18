@@ -1,3 +1,389 @@
-<h1>Amazing Net Art</h1>
-<h2>by lnz</h2>
+<!DOCTYPE html>
+<html lang="en-US">
+  
+	<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
 
+    
+      <meta charset="utf-8">
+      <title>SUM-41</title>
+  <style>
+    body {
+      background-color: #000000;
+   	   font-family: "Libre Barcode 39", cursive;
+      background-image: url("BG.png");
+      background-size: 10%;
+      background-attachment: fixed;
+      background-repeat: repeat;
+    
+    }
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+
+      
+    }
+    
+    a:hover {
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: "Libre Barcode 39", cursive;
+      font-size: 45px;
+      color: rgb(92, 255, 51);
+    }
+    
+     h1{
+      
+      font-size: 45px;
+      font-weight: 400;
+       text-align: center;
+      -webkit-animation: glow 4s ease-in-out infinite alternate;
+  		-moz-animation: glow 4s ease-in-out infinite alternate;
+  		animation: glow 4s ease-in-out infinite alternate;
+       
+    }
+    
+    h3{
+      font-size: 30px;
+       -webkit-animation: glow 1s ease-in-out infinite alternate;
+  		-moz-animation: glow 1s ease-in-out infinite alternate;
+  		animation: glow 1s ease-in-out infinite alternate;
+      text-align: center;
+      line-height: 30px;
+      font-family: 'Hanalei Fill',cursive;
+    }
+    
+    h4{
+      color: rgb(128, 0, 250);
+      font-size: 170%;
+      font-weight: 200;
+      line-height: .5px;
+      text-align: center;
+    }
+    
+    @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(100, 100, 100), 0 0 20px rgb(100, 100, 100), 0 0 10px rgb(100, 100, 100), 0 0 40px rgb(100, 100, 100), 0 0 10px rgbrgb(100, 100, 100), 0 0 60px rgbrgb(100, 100, 100), 0 0 10px rgbrgb(100, 100, 100);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(0, 10, 100), 0 0 30px #ffffff, 0 0 40px rgb(92, 173, 51), 0 0 50px #ffffff, 0 0 10px rgb(92, 173, 51), 0 0 10px #fff, 0 0 80px #fff;
+  }
+}
+    .spacer{
+      height: 8vw;
+    }
+    
+    .button, #myButton {
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid rgb(92, 255, 51);
+    color: #FFFFFF;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    display: block;
+    font-family: monospace;
+       -webkit-animation: glow 4s ease-in-out infinite alternate;
+  		-moz-animation: glow 4s ease-in-out infinite alternate;
+  		animation: glow 4s ease-in-out infinite alternate;
+    }
+      
+  	
+    .button:hover, #myButton:hover {
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid rgb(92, 255, 51);
+    color: rgb(92, 255, 51);
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    display: block;
+    font-family: "Libre Barcode 39", cursive;
+  		}
+    
+    .main{
+      background-color: #000000;
+      color: #FFFFFF;
+      width: 80vw;
+      height: 65%;
+      margin: auto;
+      padding: 10px;
+      box-shadow: 0 5px 15px 0 rgb(92, 255, 51), 0 16px 20px 0 rgba(0, 0, 0, 0.8);
+      display: flex;
+      overflow: none;
+      border-radius: 15px;
+      font-family: monospace;
+      font-size: 14px;
+
+    }
+    
+    .header {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     background-color: transparent;
+     color: #FFFFFF;
+     font-size:11vw;
+     text-align: center;
+     z-index: 4;
+     font-family: 'Hanalei Fill', cursive;
+       -webkit-animation: glow 3s ease-in-out infinite alternate;
+  		-moz-animation: glow 3s ease-in-out infinite alternate;
+  		animation: glow 3s ease-in-out infinite alternate;
+      
+    }
+  
+    .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: rgb(92, 255, 51);
+     color: #000000;
+     text-align: center;
+     font-family: monospace;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     font-weight: 900;
+     }
+    
+    .leftSide {
+      flex: 50%;
+      padding: 15px;
+      text-align: justify;
+      overflow-y: scroll;
+      overflow-x: hidden;
+       -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    
+    .leftSide::-webkit-scrollbar {
+    display: none;
+  	}
+    
+    .rightSide{
+      flex: 50%;
+      padding: 15px;
+      text-align: justify;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    
+    
+     .littleLeft{
+      flex: 30%;
+      padding: 15px;
+      text-align: justify;
+    }
+     .littleRight{
+      flex: 70%;
+      padding: 15px;
+      text-align: justify;
+    }
+    
+    /* SCROLL BAR COLOR */
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: rgb(92, 255, 51);
+      border-radius: 15px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #000000;
+      border: 1px solid rgb(92, 255, 51);
+      border-radius: 15px;
+      
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #000000; 
+      border-radius: 15px;
+    }
+    
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+			  }
+     
+  hr.rounded {
+  border-top: 1px solid #FFF;
+  border-radius: 5px;
+}
+    
+    img {
+    max-width: 100%;
+    max-height: 100%;
+      border: 1px solid white;
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+      
+      .spacer{
+      height: 25vw;
+    }
+      
+    .main{
+  	
+      display: block;}
+      
+    .rightSide{
+      overflow: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    
+    .rightSide::-webkit-scrollbar {
+    display: none;
+  	}
+}
+    
+.square {
+  height: 100px;
+  width: 100%;
+  background-color: #555;
+}
+    
+  </style>
+	</head>
+	<body> 
+    
+  <div class="header">
+    LIQUID MILIEU
+    </div>
+    
+    <div class="spacer"></div>
+  <div class="main">
+    <div class="leftSide"><br><br>
+     
+     <iframe title="vimeo-player" src="https://player.vimeo.com/video/781742252?h=52829535a8" width="100%" height="auto" frameborder="0" allowfullscreen></iframe>
+      
+    <br>
+      Students of VCU Art’s Video Concepts Class within the department of Kinetic Imaging are excited to present Liquid Milieu, an online screening of multimedia videos that explore supernatural, narrative, and abstract elements. Conversations within the works include intimacy, passion, finding our sense of self, as well as the power we have within ourselves. This exhibition is a galaxy; each student’s imagination is mashed together into a supernova blurred lines between method, making, and meaning. Experiencing the barrage of images becomes overwhelming at times and accents the diversity of perspectives and aesthetics. What discoveries can be made in the shared sea of wayfinding? We are a body of water.
+      <br><br>
+
+    </div>
+    
+   <div class="rightSide">
+      <h3>
+        FEATURING WORK BY
+      </h3>
+  
+       <br><br><img src="BerryS_Screenshot.png">
+ <h4>Sharalyn Berry</h4><br>
+     
+      Sharalyn Berry's work consists of simulated altered states of consciousness related to her new transformed perceptions after becoming a born-again believer in Jesus Christ. She mostly uses 2D animation, video, and other hybrid mediums, as these mediums bring the fantastical and otherworldly to life in a lens we can understand. Through Sharalyn's creations, she produces allusions and metaphors of the Bible where she can express her spiritual experiences relating to different everyday activities the Bible influences.
+      
+       <br><br><hr class="rounded">
+      
+      <br><br><img src="KatChiro.jpg"><br><br>
+    
+		<h4>Kat Chiroque </h4> 
+      K	at Chiroque creates mixed media works primarily using digital mediums while also occasionally using paint or gouache. Their art style has a pop culture feeling to it with an abundance of purple and blue tones. Their animated works have featured repetition and occasional randomness.
+   <br><br><hr class="rounded">
+      
+      <br><br>
+    <img src="screenshot_CarmelitaG.jpg"><br><br>
+      
+			<h4>Carmelita Garza </h4>
+    
+    Carmelita Garza is a up and coming artist currently based in Richmond, Virginia. She has a primary background in animation and 2D art. She hopes to create art that brings a smile to people’s faces. While there is not an overarching theme in place, she often creates works about her interests or certain things on her mind, but most importantly she aims to make work using POC people. As a POC woman herself, she strives to make work with people that look like her.
+      <br><br><hr class="rounded">
+      
+      <br><br><img src="diego_still.png"><br><br>
+      
+<h4>Diego Gomez Garcia </h4>
+    Diego Gomez is a primarily digital artist who works with video, animation, photography and 3D.<br><br>
+    Growing up the youngest in an immigrant family, he combines the foreign values instilled in him with the domestic ones to criticize the more ridiculous aspects of American culture that largely go unnoticed. Most notably the protest of the standard of the digital art needing to be crisp and Hi-Def to be legitimate, finding beauty and meaning in the rustic quality of “outdated” technology, fostered by growing up in a family that was always 2-3 generations behind the current standard but managing perfectly well despite that, as well as being the recipient of many hand-me-downs. <br> <br> Many of his works deal with urban environments and use of sounds and light to immerse the viewer into a looming yet beautiful world.
+      <br><br><hr class="rounded">
+      
+    <br><br><img src="rose_still.jpg"><br><br>
+
+ <h4>	Rose Khoury </h4>
+      Motivated by a longing for a bearable collective existence, the work I create approaches the overwhelming nature of what is a no longer hypothetical future. Trying to encounter understanding through the confusion of interpersonal relationships, my drawings address loneliness, longing, the joyous vulnerability that intimacy offers, the teetering confusion and insecurity that erotic relations inevitably invite. Ideas about a permissible existence appear within my work primarily in terms of how I address restraint and degradation as it relates to our environment and the body. I’m attempting to recontextualize a preoccupation with control, tasking myself with intentional cultivation. In defiance of deterioration maturation manifests through such somatic modifications as transgender deformation and handpoke tattoo as an attempt to heal/guard the body and psyche. Through material research in fermentation, discard, and utility, the presence of permission extends as the need to create work that addresses concerns of physical/ecological consumption; allowing my work to rot, regenerate, and reanimate. The literal growth and decay is intimately interwoven with the cultivation of self I'm encountering, recognizing my work as an extension and attempted understanding of new life, new embodiment.
+    
+      <br><br><hr class="rounded">
+      <br><br><img src="MalloryLaingstill.png"><br><br>
+      
+ <h4>	Mallory Laing </h4>
+    Mallory Laing creates sound and video based media, as well as drawn 2d visual work. She does commissions for digital art collages, including music covers, posters, or any visualizers needed.
+      <br><br><hr class="rounded">
+      <br><br><img src="brookludy_still.jpg"><br><br>
+      
+ <h4>Brook Ludy</h4> 
+    Brook Ludy is a local artist who grew up in Roanoke Virginia. In 2014, she started painting a series of paintings and drawings that showcase prominent landmarks of local communities around the Roanoke area. She started a business called “Brook Ludy Art,” officially created in 2018, selling prints and several different products in locations around Roanoke, Salem, in Cary Town. Her main medium is colored pencils, water color, and acrylic. Brook currently lives in Richmond and is a student at VCU Arts majoring in Kinetic Imaging. Through her time at VCU, Brook found an interest in writing, storytelling, music, and animating. Through her work, she explores themes such as time, space, and color.
+      
+      <br><br><hr class="rounded">
+     <br><br><center><img src="SamStill.jpeg"></center><br><br>
+ <h4>	Samuel Bautista</h4> 
+     Samuel McMinn Bautista (°2000, Washington Dc, United States) creates mixed media artworks and media art. By contesting the division between the realm of memory and the realm of experience through video. Bautista tries to focus on the activity of presenting. The character, shape or content of the presented artwork is secondary. The essential things are the momentary and the intention of presenting. This can be visually seen in his music videos( included on MixtapeMadness, Dearxch TV, and PressplayMedia under the Alias name " smakvisuals")<br><br>The results of the videos are deconstructed to the extent that meaning is shifted and possible interpretation becomes multifaceted. By applying abstraction in his videos, he touches various overlapping themes and strategies. Several reoccurring subject matter can be recognized, such as the relation with popular culture and media. Working with repetition, provocation and the investigation of the process of expectations.<br><br> His works often refers to pop and mass culture.
+      
+      <br><br><hr class="rounded">
+      <br><br><img src="henrymills_still.png"><br><br>
+ <h4>	Henry Mills</h4> 
+  Henry Mills is an artist living in Richmond, VA. Currently, he is interested in dreams, the power of non-verbal audiovisual experiences, and legitimizing human experiences that don't seem to warrant epic descriptions. His work includes hand-drawn animation, 2D computer animation, and heavy video manipulation.
+      
+      <br><br><hr class="rounded">
+      <br><br>
+     <img src="PI_RRRRRRRRRRassbeuni.png"><br><br>
+ <h4>	Aris Pi</h4>
+    The love of existence in all forms is what Aris is passionate about. Memory is the only thing that keeps us in this reality since we all just live inside the minds of others. Her works involve nonsensical dramas stemming from intimate moments in her life, good and bad. She chooses to work in the mediums of emotional expression and animation.
+      
+      <br><br><hr class="rounded">
+      <br><br><img src="SabelStill.png"><br><br>
+ <h4>	Ryan Sabel</h4> 
+      Ryan Sabel is a multimedia artist who’s work typically revolves around collages of found materials. His live sound practice utilizing turntablism to layer  and combine vinyl records in way to create mangled and unnatural tones. He has done many performances around the city.
+      <br><br><hr class="rounded">
+      <br><br><img src="trigoStill.jpeg"><br><br>
+<h4>B Trigo</h4>
+      B Trigo is an artist born and raised in VA. Artistic mediums are mostly video and sound, but include animation. Her work tends to center on light hearted humor mixed with lively chaotic sound.
+  
+
+    </div>
+    </div> </div>
+    
+  <div class="footer">
+    <marquee direction="right" scrollamount="3"><h1>PREMIERE  = DECEMBER 16TH @@ 8AM EST. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 16TH @@ 8AM EST.  &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 16TH @@ 8AM EST. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 16TH @@ 8AM EST. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 16TH @@ 8AM EST. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 16TH @@ 8AM EST. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 16TH @@ 8AM EST. &lt;&lt;&lt;&lt; PREMIERE  = DECEMBER 16TH @@ 8AM EST. &lt;&lt;&lt;&lt;  </h1></marquee>
+</div>
+    
+    <script>function myFunction() {
+
+            var btn = document.getElementById("myButton");
+            //to make it fancier
+            if (btn.value == "ABOUT THE COURSE") {
+                btn.value = "ABOUT THE COURSE";
+                btn.innerHTML = "ABOUT THE COURSE";
+            }
+            else {
+                btn.value = "ABOUT THE COURSE";
+                btn.innerHTML = "ABOUT THE COURSE";
+            }
+            //this is what you're looking for
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+	</body>
+</html>
