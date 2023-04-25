@@ -5,7 +5,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan&family=Dongle:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@700&family=Metal+Mania&display=swap" rel="stylesheet">
     
     <meta charset="utf-8">
     <title>SUM-Dimension</title>
@@ -13,8 +21,8 @@
   <style>
     body {
       background-color: #000000;
-   	  font-family: "Metal Mania", cursive;
-      background-image: url("Carwheel.png");
+   	  font-family: 'Anuphan', sans-serif;
+      background-image: url("BG.png");
       background-size: cover;
       background-attachment: fixed;
       background-repeat: repeat;
@@ -22,131 +30,82 @@
     }
     
     a {
-      cursor: pointer;
+      cursor: grab;
       text-decoration: none;
 
       
     }
     
     a:hover {
-      cursor: pointer;
+      cursor: grab;
       text-decoration: none;
       font-weight: bold;
-      font-family: "Metal Mania", cursive;
       font-size: 45px;
-      color: rgb(92, 255, 51);
     }
     
      h1{
       
-      font-size: 45px;
+      font-size: 5vw;
       font-weight: 100;
        text-align: center;
-       
+       text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     }
     
     h3{
       font-size: 30px;
-      text-align: center;
+
       line-height: 30px;
       font-family: "Metal Mania", cursive;
     }
     
     h4{
-      color: rgb(128, 0, 250);
+      color: rgb(255, 255, 255);
       font-size: 170%;
       font-weight: 200;
-      line-height: .5px;
+      line-height: .px;
       text-align: center;
+      text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
     }
     
 
     .spacer{
       height: 8vw;
     }
-    
-    .button, #myButton {
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(92, 255, 51);
-    color: #FFFFFF;
-    padding: 8px 10px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    width: 100%;
-    display: block;
-    font-family: monospace;
 
-    }
-      
-  	
-    .button:hover, #myButton:hover {
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(92, 255, 51);
-    color: rgb(92, 255, 51);
-    padding: 8px 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    width: 100%;
-    display: block;
-    font-family: "Libre Barcode 39", cursive;
-  		}
-    
     .main{
-      background-color: #FF2D00;
+      background-color: #b80000;
       color: #FFFFFF;
       width: 80vw;
-      height: 30%;
+      height: 48vw;
       margin: auto;
       padding: 10px;
-      box-shadow: 0 5px 15px 0 rgb(92, 255, 51), 0 16px 20px 0 rgba(0, 0, 0, 0);
+      box-shadow: 0 5px 15px 0 rgb(255, 0, 0), 0 16px 20px 0 rgba(0, 0, 0, 0);
       display: flex;
-      overflow: none;
-      border-radius: 105px;
-      font-family: "Metal Mania", cursive;
-      font-size: 16px;
-
+      overflow-y: scroll;
+      overflow-x: hidden;
+      font-size: 20px;
     }
     
     .header {
-     position: fixed;
+     position: absolute;
      left: 0;
      top: 0;
      width: 100%;
      background-color: transparent;
      color: #FFFFFF;
-     font-size: 11vw;
+     font-size: 17vw;
      text-align: center;
      z-index: 4;
      font-family: "Metal Mania", cursive;
+     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
       
     }
-  
-    .footer {
-     position: fixed;
-     left: 0;
-     bottom: 0;
-     width: 100%;
-     background-color: rgb(203, 203, 203);
-     color: #000000;
-     text-align: center;
-     font-family: "Metal Mania", cursive;
-     font-weight: 900;
-     }
     
     .leftSide {
       flex: 50%;
       padding: 15px;
       text-align: justify;
-      overflow-y: scroll;
-      overflow-x: hidden;
-       -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-    }
-    
-    .leftSide::-webkit-scrollbar {
-    display: none;
+ 
   	}
     
     .rightSide{
@@ -154,9 +113,8 @@
       padding: 15px;
       text-align: justify;
       overflow-y: scroll;
-      overflow-x: hidden;
+
     }
-    
     
      .littleLeft{
       flex: 30%;
@@ -169,76 +127,22 @@
       text-align: justify;
     }
     
-    /* SCROLL BAR COLOR */
-    /* width */
-    ::-webkit-scrollbar {
-      width: 2px;
+  img {
+    max-width: 60%;
+    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    box-shadow: 0 5px 15px 0 whitesmoke, 0 16px 20px 0 whitesmoke;
     }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: rgb(92, 255, 51);
-      border-radius: 5px;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #000000;
-      border: 1px solid rgb(92, 255, 51);
-      border-radius: 5px;
-      
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #000000; 
-      border-radius: 15px;
-    }
-    
-  div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-			  }
-     
-  hr.rounded {
-  border-top: 1px solid #FFF;
-  border-radius: 10px;
-}
-    
-    img {
-    max-width: 100%;
-    max-height: 100%;
-      border: 1px solid white;
-    }
-    
-    
     @media only screen and (max-width: 600px) {
-      
       .spacer{
       height: 25vw;
     }
       
-    .main{
-  	
-      display: block;}
-      
-    .rightSide{
-      overflow: none;
-    -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-    }
     
-    .rightSide::-webkit-scrollbar {
-    display: none;
-  	}
-}
-    
-.square {
-  height: 100px;
-  width: 100%;
-  background-color: #555;
 }
     
   </style>
@@ -247,73 +151,121 @@
     
   <div class="header">
     Sum Dimension
-    
     </div>
+    
+
     
     <div class="spacer"></div>
   <div class="main">
+    
     <div class="leftSide"><br><br>
-     
-     <iframe title="vimeo-player" src="https://vimeo.com/812511511" width="100%" height="auto" frameborder="0" allowfullscreen></iframe>
+      <h1> APRIL 26TH <BR>
+      7PM _ DEPOT ANNEX
+      PRODUTION STUDIO </h1>
+
+      <div class="littleRight">
+        
       
-    <br>
       Get ready to experience a disruptive and kinetic real-time multimedia performance, as University students from VCU Arts in Richmond, Virginia present SUM DIMENSION. This hour and a half performance, created by the collective minds of Professor HOLLOWAY's Glitch-As-Method class, will have you recalculating your expectations of art making. Using the frameworks of glitch and feminist theory, this round-robin performance explores the function of distortion and chaos, all while showcasing a decayed and modified plethora of electronics. Don't miss your chance to witness this abstract and thought-provoking display of artistic expression; peeling back the layers you get, like, a Slinky and then it's elongated so the surface area is more cus you've extended it but they don't really know what you do with after that. Come find out. <br><br>
 
     </div>
     
-   <div class="rightSide">
-      <h3>
-        Featured Glitch Gremlins
-      </h3>
+    <h1>
+      Meet the Glitch Gremlins
+    </h1>
   
        <br><br><img src="cassie.jpg">
  <h4>Cassie Melson</h4><br>
      
-      Cassie is a genderfluid artist with a love for the macabre. They work in many mediums, from animations to clay sculpture.
+      Cassie is a genderfluid artist with a love for the macabre. They work in many mediums, from animations to clay sculpture. <BR>
+        <BR>
+        <BR>
+        
+
+     <b>The Things We Hold Deer</b> is a paper-mache deer head mounted atop a cardboard box. The audience is encouraged to whisper secrets into its ear-tubes, just to the deer or to a companion on the other side. On the paper provided, the audience is encouraged to write secrets and "feed" the deer, putting their hand in its maw and dropping the paper down it's throat, where it will be destroyed in a bowl of water laying below.
+
+The piece speaks on the artist's OCD and how they deal with their worst and most troubling intrusive thoughts.
+
        <br><br><hr class="rounded">
       
       <br><br><img src="kennedy.png"><br><br>
     
 		<h4>Kennedy Patterson </h4> 
-      Kennedy Patterson is a non-binary multimedia artist with a specialization in interactive media. They are a nerd of many disciplines and enjoy a good story above all else. <br><br><hr class="rounded">
+      Kennedy Patterson is a non-binary multimedia artist with a specialization in interactive media. They are a nerd of many disciplines and enjoy a good story above all else.<br>
+      <br>
+
+    <b>R3QU13M 4 S1CKL3 C3LL</b> is a video and live performance piece discussing the impacts of Sickle Cell Anemia and the ways in which a small change in DNA can have massive implications for a persons health. The artist will be playing a music performance in which the notes played correspond with the base pairs on the HBB gene responsible for Sickle Cell while discussing with the audience their own history with genetic blood disorders. <br><br><hr class="rounded">
+
+      <br>
+     
       
       <br><br>
     <img src="marie.png"><br><br>
       
 			<h4>Marie Anderson</h4>
     
-    Marie Anderson an experimental animator, illustrator, and sound artist who portrays fantasies and variations of disruption, monstrosity, and memory. In their practice, they wield the obtuse, electronic intensity of horror aesthetics coupled with a quiet romance with the mundane to approach themes of gender, the body as landscape, and introspective apocalyptic doom. <br><br><hr class="rounded">
+    Marie Anderson an experimental animator, illustrator, and sound artist who portrays fantasies and variations of disruption, monstrosity, and memory. In their practice, they wield the obtuse, electronic intensity of horror aesthetics coupled with a quiet romance with the mundane to approach themes of gender, the body as landscape, and introspective apocalyptic doom.
+    <br>
+    <br>
+    <b>Nativity</b>, in collaboration with Henry Mills, is an interactive multi-media installation that invites audiences into a murky landscape of indecipherable codes of conduct enforced by terror and ambiguity. Links between sculptural and digital fabrications are orchestrated by code, creative electronics, and human touch. Audiences are challenged to meet the piece with unconditional care and empathy for the innocent and unwittingly grotesque, or else succumb to complacency and discomfort.
+    
+    
+    <br><br><hr class="rounded">
       
       <br><br><img src="elliot.jpg"><br><br>
       
 <h4>Elliot Kim </h4>
-   Elliot Kim is a nonbinary video artist with a passion for raw, vulnerable and subversive abstract narratives. They utilize carefully crafted scripts and bold visuals to tell their truths on trauma, identity, and truth.<br><br><hr class="rounded">
+   Elliot Kim is a nonbinary video artist with a passion for raw, vulnerable and subversive abstract narratives. They utilize carefully crafted scripts and bold visuals to tell their truths on trauma, identity, and truth.
+   <br>
+   <br>
+   <b>AI, Locate My Lost Files</b> is a video piece documenting a conversation between the artist and an AI made from their personality and memory. Kim and their Ai, 3LL1OT, discuss the effect trauma and depression has on memory, and they delve into Kim’s memories, ranging from early childhood to adolescence. These memories include the every day, the day Kim came out to their family, and impactful moments as a child.AI, Locate My Lost Files is a video piece documenting a conversation between the artist and an AI made from their personality and memory. Kim and their Ai, 3LL1OT, discuss the effect trauma and depression has on memory, and they delve into Kim’s memories, ranging from early childhood to adolescence. These memories include the every day, the day Kim came out to their family, and impactful moments as a child.
+
+   <br><br><hr class="rounded">
       
     <br><br><img src="bijan.jpeg"><br><br>
 
  <h4>	Bijan Hosseini </h4>
  Bijan Hosseini is a multimedia artist, music producer, and Dj based in the DMV area. He continues to carve his own lane as a producer, raising the bar with his masterful songwriting, sound design and engineering.
-    
+    <br>
+   <b>“(TITLE TBA)”</b> is an interactive audio-visual piece created using Max/MSP code. The interactive piece takes users through a sonic and visual experience allowing for motion to translate into glitch.
       <br><br><hr class="rounded">
+
       <br><br><img src="alyssa.png"><br><br>
       
  <h4>	Alyssa Scinta </h4>
  Alyssa Scinta (she/they) is a multimedia artist from the east coast, with a passion for a good pink/blue contrast and a fisheye lens. They specialize in video arts, graphic art, projection, and new media in relation to music and abstraction, live viewings and single channel.
+<br>
+<b>DO NOT RESUSCITATE</b> is a screen dance performance tribute to the text, ‘DO NOT RESUSCITATE.’ Written by Alyssa Scinta for the Kinetic Imaging Glitch as Method course, this piece brings the concept of deleted or corrupted technological art to life. With the program of the piece designing to override, it is impossible for the artist to recreate a duplicate frame again. The first component of the piece is the artist herself. Scinta uses the shape and color of her facial features as the paintbrush. The next includes the canvas, which is compiled of an image instancing sequence programmed in Touch Designer. This interface causes the shape of her features mold an abstract image that is constantly evolving through immediate time.
+
+
       <br><br><hr class="rounded">
+
+
       <br><br><img src="david.jpeg"><br><br>
       
  <h4>David Mallory</h4> 
  David Mallory (he/him) is a multimedia artist, sound designer, music producer, animator from Virginia. His strive for creating new experiences and sounds captured in music/film is unparalleled.
+ <br>
+ <br>
+ <b>ITLE</b> is an audio visual sound piece using Ableton. This piece is about nothing. No message, no deeper meaning, just a visceral experience that will entrance the viewer. We spend too much time trying to conceive art that has some higher purpose than ourselves, instead of creating something just for the sake of creating. This piece will be a concave of moving particles and images synced to Ableton Live.
       
       <br><br><hr class="rounded">
+
+
+
      <br><br><center><img src="aniza.jpeg"></center><br><br>
  <h4>	Aniza Douangdara</h4> 
  Aniza Douangdara (she/they) is an animator and sound artist who‘s interested in the exploration and experimentation of distorted perceptions. Their focus is on societal and personal expectations of the mind, body, and soul through an abstract lens of what reality is.
+ <br>
+ <br>
       
       <br><br><hr class="rounded">
       <br><br><img src="chloe.jpeg"><br><br>
  <h4>	chloe p</h4> 
  chloe p (she/her) revels in the promise of inherent distortion. her multimedia work manipulates moments & memories, recreating the past as the present.
+ <br>
+ <br>
+ <b>scanned scanned friends scanned friends 360 scanned friends</b>
       
       <br><br><hr class="rounded">
       <br><br>
@@ -321,16 +273,33 @@
  <h4>	Henry Mills</h4>
  Henry Mills is an animator, video artist, and sound artist who likes to dump his emotional spaghetti all over the floor. He has a keen eye for composition and structure, but he has decided that structure is just a Trojan horse for the spaghetti.
       
+ <br>
+ <br>
+<b>Nativity</b>, in collaboration with Marie Anderson, is an interactive multi-media installation that invites audiences into a murky landscape of indecipherable codes of conduct enforced by terror and ambiguity. Links between sculptural and digital fabrications are orchestrated by code, creative electronics, and human touch. Audiences are challenged to meet the piece with unconditional care and empathy for the innocent and unwittingly grotesque, or else succumb to complacency and discomfort.
       <br><br><hr class="rounded">
+
+
+
       <br><br><img src="tyreese.jpeg"><br><br>
  <h4>Tyreese Hence</h4> 
  Tyreese Hence is an animator and video artist who likes to explore old media and technology.  He takes inspiration from old cartoons.
+ <br>
+ <br>
+ <b>Untitled</b> is a harsh noise installation that uses sounds created from converting images and videos into audio.
 
       <br><br><hr class="rounded">
-      <br><br><img src="Tire.png"><br><br>
-<h4>Joe</h4>
-     Joe is an artist. 
+
+
+
+      <br><br><img src="joe.jpg"><br><br>
+<h4>Joe Crighton</h4>
+     Joe Crighton is an artist. 
+
+     <br>
+     <br>
+     <b>"Faces of Glitch"</b> is an audio-visual piece created using Clip Studio Paint and Blender. Inspired by the roleplaying game, Disco Elysium, the piece personafies the various "voices in your head."
   
+     <br><br><br><br>
 
     </div>
     </div>
